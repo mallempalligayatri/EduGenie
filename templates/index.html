@@ -1,0 +1,39 @@
+<form method="POST">
+
+    <select name="task">
+
+        <option value="question">Question Answering</option>
+
+        <option value="explain">Concept Explanation</option>
+
+        <option value="quiz">Quiz Generation</option>
+
+        <option value="summary">Text Summarization</option>
+
+        <option value="recommend">Learning Recommendation</option>
+
+    </select>
+
+    <br><br>
+
+    <input
+        type="text"
+        name="question"
+        placeholder="Enter your topic or question"
+        style="width:500px;"
+        required
+    >
+
+    <br><br>
+
+    <button type="submit">
+        Ask EduGenie
+    </button>
+
+</form>
+
+<hr>
+
+<h2>Answer</h2>
+
+<p>{{ answer }}</p>
