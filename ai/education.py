@@ -1,5 +1,5 @@
 from ai.gemini import ask_gemini
-from ai.lamini import ask_lamini
+
 
 
 def answer_question(question):
@@ -38,10 +38,12 @@ def generate_quiz(topic):
 
 def summarize_text(text):
     prompt = f"""
-    Summarize the following text in simple points.
+    Summarize the following text in simple bullet points.
 
     {text}
     """
+
+    return ask_gemini(prompt)
 
     return ask_lamini(prompt)
 
