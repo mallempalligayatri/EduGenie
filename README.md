@@ -75,4 +75,4 @@ uvicorn app:app --reload
 
 ## Author
 
-Gayathri
+Gayatri
